@@ -25,8 +25,8 @@ namespace FirstAPI.Services
             if(request.Stock<=0)
                 throw new Exception("Stock cannot be less than or equal to zero.");
             var product = new Product() { Price=request.Price, Title=request.Title, Stock=request.Stock, IsDiscontinued=false };
-            product.Id = await  GenerateId();
-            var addedProduct =  _repository.Add(product);
+            //product.Id = await  GenerateId();
+            var addedProduct =  await _repository.Add(product);
             return new AddProductResponse() { Id= product.Id};
         }
 

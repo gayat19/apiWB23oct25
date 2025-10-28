@@ -1,7 +1,9 @@
+using FirstAPI.Contexts;
 using FirstAPI.Interfaces;
 using FirstAPI.Models;
 using FirstAPI.Repositories;
 using FirstAPI.Services;
+using Microsoft.EntityFrameworkCore;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,12 +15,19 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+#region DbContext
+builder.Services.AddDbContext<ShoppingContext28Oct25>(opts =>
+{
+    opts.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+});
+#endregion
+
 #region mapper
 builder.Services.AddAutoMapper(typeof(Product));
 #endregion
 
 #region Repositories
-builder.Services.AddScoped<IRepository<int, Product>, ProductRepository>();
+builder.Services.AddScoped<IRepository<int, Product>, ProductRepositoryDB>();
 #endregion
 
 
