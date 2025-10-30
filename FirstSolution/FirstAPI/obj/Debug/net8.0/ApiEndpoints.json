@@ -26,6 +26,74 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "FirstAPI.Controllers.ProductController",
+    "Method": "DeleteProduct",
+    "RelativePath": "api/Product",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FirstAPI.Controllers.ProductController",
+    "Method": "GetProductById",
+    "RelativePath": "api/Product/GetProductById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FirstAPI.Models.DTOs.ProductListResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FirstAPI.Controllers.ProductController",
+    "Method": "ChangeStatus",
+    "RelativePath": "api/Product/RecontinueProduct",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FirstAPI.Models.DTOs.ProductListResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "FirstAPI.Controllers.SampleController",
     "Method": "GetItems",
     "RelativePath": "api/Sample",

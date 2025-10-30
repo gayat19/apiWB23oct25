@@ -42,5 +42,54 @@ namespace FirstAPI.Controllers
                 return BadRequest(ex.Message);
             }
         }
+        [HttpDelete]
+        public async Task<IActionResult> DeleteProduct([FromQuery] int id)
+        {
+            try
+            {
+                if(_productService.ChangeStatus(id,true).Result == false)
+                {
+                    return NotFound($"Product with id {id} not found.");
+                }
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+        //[HttpGet("{id}")]
+        [Route("GetProductById")]
+        [HttpGet]
+        public async Task<ActionResult<ProductListResponse>> GetProductById(int id)
+        {
+            try
+            {
+                var products = await _productService.GetAllProducts();
+                var product = products.FirstOrDefault(p => p.Id == id);
+                return Ok(product);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+        [Route("RecontinueProduct")]
+        [HttpPatch]
+        public async Task<ActionResult<ProductListResponse>> ChangeStatus(int id)
+        {
+            try
+            {
+                if (_productService.ChangeStatus(id, false).Result == false)
+                {
+                    return NotFound($"Product with id {id} not found.");
+                }
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
     }
 }

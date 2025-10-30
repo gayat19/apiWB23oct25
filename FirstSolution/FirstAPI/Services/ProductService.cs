@@ -26,6 +26,7 @@ namespace FirstAPI.Services
                 throw new Exception("Stock cannot be less than or equal to zero.");
             var product = new Product() { Price=request.Price, Title=request.Title, Stock=request.Stock, IsDiscontinued=false };
             //product.Id = await  GenerateId();
+            //var category = 
             var addedProduct =  await _repository.Add(product);
             return new AddProductResponse() { Id= product.Id};
         }
@@ -52,6 +53,32 @@ namespace FirstAPI.Services
             }
             return result;
 
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="discontinue">true for discontining false for making available</param>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
+        public async Task<bool> ChangeStatus(int id, bool discontinue)
+        {
+            var product = await _repository.GetById(id);
+            if (product == null)
+            {
+                throw new Exception($"Product with id {id} not found.");
+            }
+            if (product.IsDiscontinued == false && discontinue==false)
+            {
+                throw new Exception($"Product with id {id} is already available.");
+            }
+            if (product.IsDiscontinued == true && discontinue == true)
+            {
+                throw new Exception($"Product with id {id} is already discontiued.");
+            }
+            product.IsDiscontinued = discontinue;
+            await _repository.Update(id, product);
+            return true;
         }
     }
 }
