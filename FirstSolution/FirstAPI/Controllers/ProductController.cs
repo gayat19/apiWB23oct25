@@ -1,6 +1,8 @@
 ﻿using FirstAPI.Interfaces;
 using FirstAPI.Models.DTOs;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FirstAPI.Controllers
@@ -15,7 +17,7 @@ namespace FirstAPI.Controllers
         {
             _productService = productService;
         }
-
+        [Authorize]
         [HttpGet]
         public async Task<IActionResult> GetAllProducts()
         {
@@ -29,6 +31,7 @@ namespace FirstAPI.Controllers
                 return BadRequest(ex.Message);
             }
         }
+        [Authorize(Roles ="admin")]
         [HttpPost]
         public async Task<IActionResult> AddProduct([FromBody] AddProductRequest request)
         {

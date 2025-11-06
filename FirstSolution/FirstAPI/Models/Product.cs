@@ -14,5 +14,7 @@ namespace FirstAPI.Models
 
         [ForeignKey("CategoryId")]
         public Category? Category { get; set; }
+
+        public ICollection<OrderDetail>? OrderDetails { get; set; }
     }
 }

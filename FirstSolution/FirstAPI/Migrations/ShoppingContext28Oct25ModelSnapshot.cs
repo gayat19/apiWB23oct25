@@ -36,7 +36,83 @@ namespace FirstAPI.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Category");
+                    b.ToTable("Categories");
+                });
+
+            modelBuilder.Entity("FirstAPI.Models.Customer", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<float>("Age")
+                        .HasColumnType("real");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id")
+                        .HasName("PK_Customers_ID");
+
+                    b.ToTable("Customers");
+                });
+
+            modelBuilder.Entity("FirstAPI.Models.Order", b =>
+                {
+                    b.Property<int>("OrderNumber")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("OrderNumber"));
+
+                    b.Property<int>("CustomerId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("DateOfOrder")
+                        .HasColumnType("datetime2");
+
+                    b.Property<decimal>("Total")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("OrderNumber")
+                        .HasName("PK_Orders_OrderNumber");
+
+                    b.HasIndex("CustomerId");
+
+                    b.ToTable("Orders");
+                });
+
+            modelBuilder.Entity("FirstAPI.Models.OrderDetail", b =>
+                {
+                    b.Property<int>("SNo")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SNo"));
+
+                    b.Property<int>("OrderNumber")
+                        .HasColumnType("int");
+
+                    b.Property<float>("Price")
+                        .HasColumnType("real");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.HasKey("SNo")
+                        .HasName("PK_OrderDetails_SNo");
+
+                    b.HasIndex("OrderNumber");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("OrderDetails");
                 });
 
             modelBuilder.Entity("FirstAPI.Models.Product", b =>
@@ -70,6 +146,80 @@ namespace FirstAPI.Migrations
                     b.ToTable("Products");
                 });
 
+            modelBuilder.Entity("FirstAPI.Models.SpLoginReturn", b =>
+                {
+                    b.Property<byte[]>("HashKey")
+                        .IsRequired()
+                        .HasColumnType("varbinary(max)");
+
+                    b.Property<byte[]>("Password")
+                        .IsRequired()
+                        .HasColumnType("varbinary(max)");
+
+                    b.ToTable("SpLoginReturn");
+                });
+
+            modelBuilder.Entity("FirstAPI.Models.User", b =>
+                {
+                    b.Property<string>("Username")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("CustomerId")
+                        .HasColumnType("int");
+
+                    b.Property<byte[]>("HashKey")
+                        .IsRequired()
+                        .HasColumnType("varbinary(max)");
+
+                    b.Property<byte[]>("Password")
+                        .IsRequired()
+                        .HasColumnType("varbinary(max)");
+
+                    b.Property<string>("Role")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Username")
+                        .HasName("PK_Users_Username");
+
+                    b.HasIndex("CustomerId")
+                        .IsUnique();
+
+                    b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("FirstAPI.Models.Order", b =>
+                {
+                    b.HasOne("FirstAPI.Models.Customer", "Customer")
+                        .WithMany("Orders")
+                        .HasForeignKey("CustomerId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired()
+                        .HasConstraintName("FK_Orders_Customers_CustomerId");
+
+                    b.Navigation("Customer");
+                });
+
+            modelBuilder.Entity("FirstAPI.Models.OrderDetail", b =>
+                {
+                    b.HasOne("FirstAPI.Models.Order", "Order")
+                        .WithMany("OrderDetails")
+                        .HasForeignKey("OrderNumber")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired()
+                        .HasConstraintName("FK_OrderDetails_Orders_OrderNumber");
+
+                    b.HasOne("FirstAPI.Models.Product", "Product")
+                        .WithMany("OrderDetails")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired()
+                        .HasConstraintName("FK_OrderDetails_Products_ProductId");
+
+                    b.Navigation("Order");
+
+                    b.Navigation("Product");
+                });
+
             modelBuilder.Entity("FirstAPI.Models.Product", b =>
                 {
                     b.HasOne("FirstAPI.Models.Category", "Category")
@@ -77,6 +227,35 @@ namespace FirstAPI.Migrations
                         .HasForeignKey("CategoryId");
 
                     b.Navigation("Category");
+                });
+
+            modelBuilder.Entity("FirstAPI.Models.User", b =>
+                {
+                    b.HasOne("FirstAPI.Models.Customer", "Customer")
+                        .WithOne("User")
+                        .HasForeignKey("FirstAPI.Models.User", "CustomerId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired()
+                        .HasConstraintName("FK_Users_Customers_CustomerId");
+
+                    b.Navigation("Customer");
+                });
+
+            modelBuilder.Entity("FirstAPI.Models.Customer", b =>
+                {
+                    b.Navigation("Orders");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("FirstAPI.Models.Order", b =>
+                {
+                    b.Navigation("OrderDetails");
+                });
+
+            modelBuilder.Entity("FirstAPI.Models.Product", b =>
+                {
+                    b.Navigation("OrderDetails");
                 });
 #pragma warning restore 612, 618
         }

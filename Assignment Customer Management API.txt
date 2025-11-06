@@ -1,0 +1,79 @@
+Assignment: Customer Management API (Repository Pattern)
+
+Scenario:
+You are required to design a simple .NET 8 Web API to manage Customer data. The focus is on applying Entity Framework Core, Repository Pattern, and Service Layer Architecture.
+
+Requirements 
+1: Model: Customer
+
+Create a class named Customer with the following properties:
+
+CustomerId (int, primary key)
+
+Name (string, required, max length 100)
+
+Age (int, required)
+
+Email (string, optional)
+
+2:  Database Context: AppDbContext
+
+Inherit from DbContext.
+
+Include a DbSet<Customer> property.
+
+Configure EF Core to use InMemoryDatabase for easy testing (no SQL setup needed).
+
+3: Repository Layer
+
+Create a folder Repositories with:
+
+Interface: ICustomerRepository
+
+Task<IEnumerable<Customer>> GetAllAsync();
+
+Task<Customer?> GetByIdAsync(int id);
+
+Task AddAsync(Customer customer);
+
+Task<IEnumerable<Customer>> SearchByAgeRangeAsync(int minAge, int maxAge);
+
+Implementation: CustomerRepository
+
+Implement the above methods using EF Core operations.
+
+4: Service Layer
+
+Create a folder Services with:
+
+Interface: ICustomerService
+
+Task AddCustomerAsync(Customer customer);
+
+Task<IEnumerable<Customer>> SearchCustomersByAgeAsync(int minAge, int maxAge);
+
+Implementation: CustomerService
+
+Validate input (e.g., minAge < maxAge, Age > 0).
+
+Call repository methods.
+
+5:  Controller (Optional – Bonus)
+
+Create a CustomerController with:
+
+POST /api/customers → Adds a new customer.
+
+GET /api/customers/search?minAge=20&maxAge=40 → Returns customers whose age is within the given range.
+
+Use dependency injection to connect Controller → Service → Repository.
+
+Expected Outcome
+
+Proper 3-layer structure (Controller → Service → Repository → DbContext).
+
+Async methods for data access.
+
+Clean, readable code with basic validation.
+
+Demonstrated understanding of Add and Search by Range operations.
