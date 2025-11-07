@@ -1,8 +1,10 @@
 using FirstAPI.Contexts;
 using FirstAPI.Interfaces;
+using FirstAPI.Misc;
 using FirstAPI.Models;
 using FirstAPI.Repositories;
 using FirstAPI.Services;
+using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
@@ -12,7 +14,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+builder.Services.AddControllers(opt =>
+{
+    opt.Filters.Add<CustomExceptionFilter>();
+});
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(option =>
@@ -41,7 +46,18 @@ builder.Services.AddSwaggerGen(option =>
              }
          });
 });
-    
+
+builder.Services.AddRateLimiter(options =>
+{
+    options.RejectionStatusCode = 429;
+    options.AddFixedWindowLimiter(policyName: "Fixed", options =>
+    {
+        options.PermitLimit = 3;
+        options.Window = TimeSpan.FromSeconds(30);
+        options.QueueProcessingOrder = System.Threading.RateLimiting.QueueProcessingOrder.OldestFirst;
+        options.QueueLimit = 0;
+    });
+});
 
 builder.Services.AddAuthentication()
     .AddJwtBearer(options =>
@@ -57,6 +73,16 @@ builder.Services.AddAuthentication()
             )
         };
     });
+
+builder.Services.AddCors(opts =>
+{
+    opts.AddPolicy("AllowAll", policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyMethod()
+              .AllowAnyHeader();
+    });
+});
 
 #region DbContext
 builder.Services.AddDbContext<ShoppingContext28Oct25>(opts =>
@@ -89,9 +115,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseCors("AllowAll");
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.MapControllers();
+app.UseRateLimiter();
+
+app.MapControllers().RequireRateLimiting("Fixed");
 
 app.Run();

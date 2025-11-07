@@ -1,6 +1,7 @@
 ﻿using FirstAPI.Interfaces;
 using FirstAPI.Models.DTOs;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -9,6 +10,7 @@ namespace FirstAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [EnableCors("AllowAll")]
     public class ProductController : ControllerBase
     {
         private readonly IProductService _productService;
