@@ -148,3 +148,6 @@ D:\Corp\WhiteBlue\APITrainingOct25\FirstSolution\FirstAPI\bin\Debug\net8.0\runti
 D:\Corp\WhiteBlue\APITrainingOct25\FirstSolution\FirstAPI\obj\Debug\net8.0\FirstAPI.sourcelink.json
 D:\Corp\WhiteBlue\APITrainingOct25\FirstSolution\FirstAPI\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 D:\Corp\WhiteBlue\APITrainingOct25\FirstSolution\FirstAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Corp\WhiteBlue\APITrainingOct25\FirstSolution\FirstAPI\bin\Debug\net8.0\log4net.config
+D:\Corp\WhiteBlue\APITrainingOct25\FirstSolution\FirstAPI\bin\Debug\net8.0\log4net.dll
+D:\Corp\WhiteBlue\APITrainingOct25\FirstSolution\FirstAPI\bin\Debug\net8.0\Microsoft.Extensions.Logging.Log4Net.AspNetCore.dll

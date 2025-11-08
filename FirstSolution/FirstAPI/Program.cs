@@ -47,6 +47,8 @@ builder.Services.AddSwaggerGen(option =>
          });
 });
 
+builder.Logging.AddLog4Net();
+
 builder.Services.AddRateLimiter(options =>
 {
     options.RejectionStatusCode = 429;

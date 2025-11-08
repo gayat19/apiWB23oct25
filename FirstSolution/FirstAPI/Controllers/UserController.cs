@@ -11,10 +11,12 @@ namespace FirstAPI.Controllers
     public class UserController : ControllerBase
     {
         private readonly IUserService _userService;
+        private readonly ILogger<UserController> _logger;
 
-        public UserController(IUserService userService) 
+        public UserController(IUserService userService,ILogger<UserController> logger) 
         {
             _userService = userService;
+            _logger = logger;
         }
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] CustomerRegisterRequest customer)
@@ -49,11 +51,13 @@ namespace FirstAPI.Controllers
                 }
                 else
                 {
+                    _logger.LogWarning("Invalid login attempt for user: {Username}", user.Username);
                     return Unauthorized("Invalid username or password.");
                 }
             }
             catch (Exception ex)
             {
+                _logger.LogWarning("Invalid login attempt for user: {Username}", user.Username);
                 return Unauthorized("Invalid username or password.");
             }
         }

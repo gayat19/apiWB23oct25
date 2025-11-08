@@ -3,52 +3,28 @@
   "WorkspaceRootPath": "D:\\Corp\\WhiteBlue\\APITrainingOct25\\FirstSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DA43C327-FFD8-4120-84CD-BAD6414BAEB6}|FirstAPI\\FirstAPI.csproj|d:\\corp\\whiteblue\\apitrainingoct25\\firstsolution\\firstapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA43C327-FFD8-4120-84CD-BAD6414BAEB6}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BD3DC1F4-A6CD-406A-B1F7-059D55692562}|TestProject1\\TestProject1.csproj|d:\\corp\\whiteblue\\apitrainingoct25\\firstsolution\\testproject1\\productservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD3DC1F4-A6CD-406A-B1F7-059D55692562}|TestProject1\\TestProject1.csproj|solutionrelative:testproject1\\productservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA43C327-FFD8-4120-84CD-BAD6414BAEB6}|FirstAPI\\FirstAPI.csproj|d:\\corp\\whiteblue\\apitrainingoct25\\firstsolution\\firstapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA43C327-FFD8-4120-84CD-BAD6414BAEB6}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DA43C327-FFD8-4120-84CD-BAD6414BAEB6}|FirstAPI\\FirstAPI.csproj|d:\\corp\\whiteblue\\apitrainingoct25\\firstsolution\\firstapi\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA43C327-FFD8-4120-84CD-BAD6414BAEB6}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA43C327-FFD8-4120-84CD-BAD6414BAEB6}|FirstAPI\\FirstAPI.csproj|d:\\corp\\whiteblue\\apitrainingoct25\\firstsolution\\firstapi\\misc\\customexceptionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA43C327-FFD8-4120-84CD-BAD6414BAEB6}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\misc\\customexceptionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA43C327-FFD8-4120-84CD-BAD6414BAEB6}|FirstAPI\\FirstAPI.csproj|d:\\corp\\whiteblue\\apitrainingoct25\\firstsolution\\firstapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA43C327-FFD8-4120-84CD-BAD6414BAEB6}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA43C327-FFD8-4120-84CD-BAD6414BAEB6}|FirstAPI\\FirstAPI.csproj|d:\\corp\\whiteblue\\apitrainingoct25\\firstsolution\\firstapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA43C327-FFD8-4120-84CD-BAD6414BAEB6}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA43C327-FFD8-4120-84CD-BAD6414BAEB6}|FirstAPI\\FirstAPI.csproj|d:\\corp\\whiteblue\\apitrainingoct25\\firstsolution\\firstapi\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA43C327-FFD8-4120-84CD-BAD6414BAEB6}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA43C327-FFD8-4120-84CD-BAD6414BAEB6}|FirstAPI\\FirstAPI.csproj|d:\\corp\\whiteblue\\apitrainingoct25\\firstsolution\\firstapi\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA43C327-FFD8-4120-84CD-BAD6414BAEB6}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA43C327-FFD8-4120-84CD-BAD6414BAEB6}|FirstAPI\\FirstAPI.csproj|d:\\corp\\whiteblue\\apitrainingoct25\\firstsolution\\firstapi\\interfaces\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA43C327-FFD8-4120-84CD-BAD6414BAEB6}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\interfaces\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BD3DC1F4-A6CD-406A-B1F7-059D55692562}|TestProject1\\TestProject1.csproj|d:\\corp\\whiteblue\\apitrainingoct25\\firstsolution\\testproject1\\productrepotest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD3DC1F4-A6CD-406A-B1F7-059D55692562}|TestProject1\\TestProject1.csproj|solutionrelative:testproject1\\productrepotest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DA43C327-FFD8-4120-84CD-BAD6414BAEB6}|FirstAPI\\FirstAPI.csproj|d:\\corp\\whiteblue\\apitrainingoct25\\firstsolution\\firstapi\\repositories\\productrepositorydb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA43C327-FFD8-4120-84CD-BAD6414BAEB6}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\repositories\\productrepositorydb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA43C327-FFD8-4120-84CD-BAD6414BAEB6}|FirstAPI\\FirstAPI.csproj|d:\\corp\\whiteblue\\apitrainingoct25\\firstsolution\\firstapi\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA43C327-FFD8-4120-84CD-BAD6414BAEB6}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DA43C327-FFD8-4120-84CD-BAD6414BAEB6}|FirstAPI\\FirstAPI.csproj|d:\\corp\\whiteblue\\apitrainingoct25\\firstsolution\\firstapi\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA43C327-FFD8-4120-84CD-BAD6414BAEB6}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA43C327-FFD8-4120-84CD-BAD6414BAEB6}|FirstAPI\\FirstAPI.csproj|d:\\corp\\whiteblue\\apitrainingoct25\\firstsolution\\firstapi\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA43C327-FFD8-4120-84CD-BAD6414BAEB6}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA43C327-FFD8-4120-84CD-BAD6414BAEB6}|FirstAPI\\FirstAPI.csproj|d:\\corp\\whiteblue\\apitrainingoct25\\firstsolution\\firstapi\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA43C327-FFD8-4120-84CD-BAD6414BAEB6}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DA43C327-FFD8-4120-84CD-BAD6414BAEB6}|FirstAPI\\FirstAPI.csproj|d:\\corp\\whiteblue\\apitrainingoct25\\firstsolution\\firstapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA43C327-FFD8-4120-84CD-BAD6414BAEB6}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,162 +34,88 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "D:\\Corp\\WhiteBlue\\APITrainingOct25\\FirstSolution\\FirstAPI\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "FirstAPI\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "D:\\Corp\\WhiteBlue\\APITrainingOct25\\FirstSolution\\FirstAPI\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "FirstAPI\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAMAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "D:\\Corp\\WhiteBlue\\APITrainingOct25\\FirstSolution\\FirstAPI\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "FirstAPI\\Services\\ProductService.cs",
+              "ToolTip": "D:\\Corp\\WhiteBlue\\APITrainingOct25\\FirstSolution\\FirstAPI\\Services\\ProductService.cs",
+              "RelativeToolTip": "FirstAPI\\Services\\ProductService.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwDAAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T07:05:56.298Z",
+              "WhenOpened": "2025-11-08T07:19:03.414Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CustomExceptionFilter.cs",
-              "DocumentMoniker": "D:\\Corp\\WhiteBlue\\APITrainingOct25\\FirstSolution\\FirstAPI\\Misc\\CustomExceptionFilter.cs",
-              "RelativeDocumentMoniker": "FirstAPI\\Misc\\CustomExceptionFilter.cs",
-              "ToolTip": "D:\\Corp\\WhiteBlue\\APITrainingOct25\\FirstSolution\\FirstAPI\\Misc\\CustomExceptionFilter.cs",
-              "RelativeToolTip": "FirstAPI\\Misc\\CustomExceptionFilter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "ProductServiceTest.cs",
+              "DocumentMoniker": "D:\\Corp\\WhiteBlue\\APITrainingOct25\\FirstSolution\\TestProject1\\ProductServiceTest.cs",
+              "RelativeDocumentMoniker": "TestProject1\\ProductServiceTest.cs",
+              "ToolTip": "D:\\Corp\\WhiteBlue\\APITrainingOct25\\FirstSolution\\TestProject1\\ProductServiceTest.cs",
+              "RelativeToolTip": "TestProject1\\ProductServiceTest.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAowDUAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T07:03:44.631Z",
+              "WhenOpened": "2025-11-08T07:17:21.056Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\Corp\\WhiteBlue\\APITrainingOct25\\FirstSolution\\FirstAPI\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "FirstAPI\\Controllers\\UserController.cs",
-              "ToolTip": "D:\\Corp\\WhiteBlue\\APITrainingOct25\\FirstSolution\\FirstAPI\\Controllers\\UserController.cs",
-              "RelativeToolTip": "FirstAPI\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T06:54:47.766Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "D:\\Corp\\WhiteBlue\\APITrainingOct25\\FirstSolution\\FirstAPI\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "FirstAPI\\Controllers\\ProductController.cs",
-              "ToolTip": "D:\\Corp\\WhiteBlue\\APITrainingOct25\\FirstSolution\\FirstAPI\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "FirstAPI\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T06:54:00.057Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Corp\\WhiteBlue\\APITrainingOct25\\FirstSolution\\FirstAPI\\Program.cs",
-              "RelativeDocumentMoniker": "FirstAPI\\Program.cs",
-              "ToolTip": "D:\\Corp\\WhiteBlue\\APITrainingOct25\\FirstSolution\\FirstAPI\\Program.cs",
-              "RelativeToolTip": "FirstAPI\\Program.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAuwBIAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T09:27:39.855Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "D:\\Corp\\WhiteBlue\\APITrainingOct25\\FirstSolution\\FirstAPI\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "FirstAPI\\Services\\UserService.cs",
-              "ToolTip": "D:\\Corp\\WhiteBlue\\APITrainingOct25\\FirstSolution\\FirstAPI\\Services\\UserService.cs",
-              "RelativeToolTip": "FirstAPI\\Services\\UserService.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwCYAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T09:26:28.977Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "D:\\Corp\\WhiteBlue\\APITrainingOct25\\FirstSolution\\FirstAPI\\Interfaces\\IUserService.cs",
-              "RelativeDocumentMoniker": "FirstAPI\\Interfaces\\IUserService.cs",
-              "ToolTip": "D:\\Corp\\WhiteBlue\\APITrainingOct25\\FirstSolution\\FirstAPI\\Interfaces\\IUserService.cs",
-              "RelativeToolTip": "FirstAPI\\Interfaces\\IUserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T09:25:19.681Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ITokenService.cs",
-              "DocumentMoniker": "D:\\Corp\\WhiteBlue\\APITrainingOct25\\FirstSolution\\FirstAPI\\Interfaces\\ITokenService.cs",
-              "RelativeDocumentMoniker": "FirstAPI\\Interfaces\\ITokenService.cs",
-              "ToolTip": "D:\\Corp\\WhiteBlue\\APITrainingOct25\\FirstSolution\\FirstAPI\\Interfaces\\ITokenService.cs",
-              "RelativeToolTip": "FirstAPI\\Interfaces\\ITokenService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T09:25:15.386Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "ProductRepositoryDB.cs",
               "DocumentMoniker": "D:\\Corp\\WhiteBlue\\APITrainingOct25\\FirstSolution\\FirstAPI\\Repositories\\ProductRepositoryDB.cs",
               "RelativeDocumentMoniker": "FirstAPI\\Repositories\\ProductRepositoryDB.cs",
               "ToolTip": "D:\\Corp\\WhiteBlue\\APITrainingOct25\\FirstSolution\\FirstAPI\\Repositories\\ProductRepositoryDB.cs",
               "RelativeToolTip": "FirstAPI\\Repositories\\ProductRepositoryDB.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwCYAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T09:24:40.742Z",
+              "WhenOpened": "2025-11-08T07:07:59.147Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CategoryRepository.cs",
-              "DocumentMoniker": "D:\\Corp\\WhiteBlue\\APITrainingOct25\\FirstSolution\\FirstAPI\\Repositories\\CategoryRepository.cs",
-              "RelativeDocumentMoniker": "FirstAPI\\Repositories\\CategoryRepository.cs",
-              "ToolTip": "D:\\Corp\\WhiteBlue\\APITrainingOct25\\FirstSolution\\FirstAPI\\Repositories\\CategoryRepository.cs",
-              "RelativeToolTip": "FirstAPI\\Repositories\\CategoryRepository.cs",
+              "DocumentIndex": 4,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "D:\\Corp\\WhiteBlue\\APITrainingOct25\\FirstSolution\\FirstAPI\\Repositories\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "FirstAPI\\Repositories\\ProductRepository.cs",
+              "ToolTip": "D:\\Corp\\WhiteBlue\\APITrainingOct25\\FirstSolution\\FirstAPI\\Repositories\\ProductRepository.cs",
+              "RelativeToolTip": "FirstAPI\\Repositories\\ProductRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T09:24:37.813Z",
+              "WhenOpened": "2025-11-08T07:07:57.836Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Repository.cs",
-              "DocumentMoniker": "D:\\Corp\\WhiteBlue\\APITrainingOct25\\FirstSolution\\FirstAPI\\Repositories\\Repository.cs",
-              "RelativeDocumentMoniker": "FirstAPI\\Repositories\\Repository.cs",
-              "ToolTip": "D:\\Corp\\WhiteBlue\\APITrainingOct25\\FirstSolution\\FirstAPI\\Repositories\\Repository.cs",
-              "RelativeToolTip": "FirstAPI\\Repositories\\Repository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAkAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Corp\\WhiteBlue\\APITrainingOct25\\FirstSolution\\FirstAPI\\Program.cs",
+              "RelativeDocumentMoniker": "FirstAPI\\Program.cs",
+              "ToolTip": "D:\\Corp\\WhiteBlue\\APITrainingOct25\\FirstSolution\\FirstAPI\\Program.cs",
+              "RelativeToolTip": "FirstAPI\\Program.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAIBJwFsAAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T09:24:32.558Z",
+              "WhenOpened": "2025-11-08T06:53:03.23Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "TokenService.cs",
-              "DocumentMoniker": "D:\\Corp\\WhiteBlue\\APITrainingOct25\\FirstSolution\\FirstAPI\\Services\\TokenService.cs",
-              "RelativeDocumentMoniker": "FirstAPI\\Services\\TokenService.cs",
-              "ToolTip": "D:\\Corp\\WhiteBlue\\APITrainingOct25\\FirstSolution\\FirstAPI\\Services\\TokenService.cs",
-              "RelativeToolTip": "FirstAPI\\Services\\TokenService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "ProductRepoTest.cs",
+              "DocumentMoniker": "D:\\Corp\\WhiteBlue\\APITrainingOct25\\FirstSolution\\TestProject1\\ProductRepoTest.cs",
+              "RelativeDocumentMoniker": "TestProject1\\ProductRepoTest.cs",
+              "ToolTip": "D:\\Corp\\WhiteBlue\\APITrainingOct25\\FirstSolution\\TestProject1\\ProductRepoTest.cs",
+              "RelativeToolTip": "TestProject1\\ProductRepoTest.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAAAEIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T09:22:28.807Z",
+              "WhenOpened": "2025-11-08T06:48:48.303Z",
               "EditorCaption": ""
             }
           ]

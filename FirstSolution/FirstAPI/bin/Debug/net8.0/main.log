@@ -1,0 +1,12 @@
+2025-11-08 12:12:26,590 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2025-11-08 12:12:26,601 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2025-11-08 12:12:26,604 [1] INFO Microsoft.Hosting.Lifetime - Content root path: D:\Corp\WhiteBlue\APITrainingOct25\FirstSolution\FirstAPI
+2025-11-08 12:12:40,271 [.NET TP Worker] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (81ms) [Parameters=[p0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+exec proc_Login @p0
+2025-11-08 12:12:40,462 [.NET TP Worker] WARN FirstAPI.Controllers.UserController - Invalid login attempt for user: string
+2025-11-08 12:14:20,386 [1] INFO Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2025-11-08 12:14:20,397 [1] INFO Microsoft.Hosting.Lifetime - Hosting environment: Development
+2025-11-08 12:14:20,402 [1] INFO Microsoft.Hosting.Lifetime - Content root path: D:\Corp\WhiteBlue\APITrainingOct25\FirstSolution\FirstAPI
+2025-11-08 12:14:31,179 [.NET TP Worker] INFO Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (49ms) [Parameters=[p0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+exec proc_Login @p0
+2025-11-08 12:14:31,313 [.NET TP Worker] WARN FirstAPI.Controllers.UserController - Invalid login attempt for user: string
